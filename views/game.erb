@@ -1,0 +1,21 @@
+<form action="/game" method="POST">
+<table>
+ <tr>
+  <td class="br"> <input type="submit" name="choice" value="1"><%= board[0] %></td><td class="br"> <input type="submit" name="choice" value="2"><%= board[1] %></td><td class="br"> <input type="submit" name="choice" value="3"><%= board[2] %></td>
+ </tr><tr>
+  <td class="br"> <input type="submit" name="choice" value="4"><%= board[3] %></td><td class="br"> <input type="submit" name="choice" value="5"><%= board[4] %></td><td class="br"> <input type="submit" name="choice" value="6"><%= board[5] %></td>
+ </tr><tr>
+  <td class="br"> <input type="submit" name="choice" value="7"><%= board[6] %></td><td class="r"> <input type="submit" name="choice" value="8"><%=board[7] %></td><td> <input type="submit" name="choice" value="9"><%= board[8] %></td>
+ </tr>
+</table>
+</form>
+ <%= "#{current_player.marker} it is your turn pick a valid spot."%><br>
+
+<form method = "post" action = "get_player_move">
+
+	<input type = "number" name = "move_spot" min = "1", max = "9">
+
+	<input type = "submit">
+
+</form>
+
